@@ -2,7 +2,7 @@
 #define GroveLED_H
 
 #include <Arduino.h>
-#include <GroveOnOffActuator>
+#include <GroveOnOffActuator.h>
 
 class GroveLED : public GroveOnOffActuator {		
 	public:

@@ -3,7 +3,6 @@ LED Library for Arduino + Grove shield
 
 ## Example
 ```c++
-#include <Grove.h>
 #include <GroveLED.h>
 
 GroveLED led;
