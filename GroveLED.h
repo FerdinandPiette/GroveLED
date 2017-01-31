@@ -2,23 +2,12 @@
 #define GroveLED_H
 
 #include <Arduino.h>
-#include "../Grove/Grove.h"
+#include <GroveOnOffActuator>
 
-class GroveLED {
-	private:
-		unsigned int _pinLED;
-		boolean _state;
-
-	protected:
-		void _refresh();
-		
+class GroveLED : public GroveOnOffActuator {		
 	public:
-		GroveLED(GrovePin pins);
+		GroveLED();
 		virtual ~GroveLED() {};
-		void initialize();
-		void turnOn();
-		void turnOff();
-		void toggle();
 };
 
 #endif

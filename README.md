@@ -6,12 +6,11 @@ LED Library for Arduino + Grove shield
 #include <Grove.h>
 #include <GroveLED.h>
 
-GroveLED led(GROVE_D8);
+GroveLED led;
 
 void setup() {
-  led.initialize();
+  led.initialize(GROVE_D8);
   led.turnOff();
-  Serial.begin(9200);
 }
 
 void loop() {
@@ -21,6 +20,8 @@ void loop() {
 ```
 
 ## Documentation
+Inherit from GroveOnOffActuator
+
 ###`GroveLED(GrovePin pins)`
 Parameters:
 - `pins`: Must be a digital socket (GROVE_D2 to GROVE_D8)
