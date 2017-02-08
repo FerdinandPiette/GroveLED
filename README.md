@@ -21,12 +21,11 @@ void loop() {
 ## Documentation
 Inherit from GroveOnOffActuator
 
-###`GroveLED(GrovePin pins)`
+###`void initialize(GrovePin pins)`
+Initialize the sensor before using it.
+
 Parameters:
 - `pins`: Must be a digital socket (GROVE_D2 to GROVE_D8)
-
-###`void initialize()`
-Initialize the sensor before using it.
 
 ###`void turnOn()`
 Turn the LED on
